@@ -7,8 +7,7 @@ from streamlit_timeline import timeline
 st.set_page_config(layout="wide")
 
 def main():
-    st.markdown("# 500 years of glory human history")
-    st.markdown("## build by ROE AI + DeepSeek R1")
+    st.markdown("## The Glory and Ugly in Human History")
 
     # Upload CSV file
     # Read the CSV file into a pandas DataFrame
@@ -33,7 +32,7 @@ def main():
     timeline_data = {
         "title": {
             "text": {
-                "headline": "Events Timeline"
+                "headline": "1500-2024 The Glory and Ugly in Human History"
             }
         },
         "events": events_list
@@ -46,6 +45,7 @@ def main():
 
     # Render the timeline with increased height (and wide layout via set_page_config)
     timeline(timeline_json, height=800)
+    st.markdown("### Build by DeepSeek R1 on ROE AI Data Platform")
 
 
 if __name__ == "__main__":
